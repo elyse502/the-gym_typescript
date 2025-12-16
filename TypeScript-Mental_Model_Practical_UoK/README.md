@@ -13,6 +13,8 @@ const names = ["alice", "bob", 123];
 names.forEach(greet);
 ```
 
+<br /><hr /><br />
+
 2. [1-main.ts](1-main.ts)
 
 ```tsx
@@ -20,6 +22,8 @@ const scores: number[] = [95, "100", 87];
 scores.push(82);
 console.log(scores.reduce((a, b) => a + b));
 ```
+
+<br /><hr /><br />
 
 3. [2-main.ts](2-main.ts)
 
@@ -31,6 +35,8 @@ function printUser(user) {
 
 printUser({ name: "Sara", age: "25" });
 ```
+
+<br /><hr /><br />
 
 4. [3-main.ts](3-main.ts)
 
@@ -44,6 +50,8 @@ function getLength(id: ID) {
 getLength(123);
 getLength("abc");
 ```
+
+<br /><hr /><br />
 
 5. [4-main.ts](4-main.ts)
 
@@ -61,6 +69,8 @@ function getCurrentUser(): User {
 }
 ```
 
+<br /><hr /><br />
+
 6. [5-main.ts](5-main.ts)
 
 ```tsx
@@ -75,6 +85,8 @@ function greet(user: User) {
 }
 ```
 
+<br /><hr /><br />
+
 7. [6-main.ts](6-main.ts)
 
 ```tsx
@@ -87,6 +99,8 @@ function evaluateScore(score: number): Result {
 }
 ```
 
+<br /><hr /><br />
+
 8. [7-main.ts](7-main.ts)
 
 ```tsx
@@ -98,6 +112,8 @@ function logLength(value: Value) {
   }
 }
 ```
+
+<br /><hr /><br />
 
 9. [8-main.ts](8-main.ts)
 
@@ -112,6 +128,8 @@ async function fetchData(id: number): Promise<ApiResponse> {
   return json;
 }
 ```
+
+<br /><hr /><br />
 
 10. [9-main.ts](9-main.ts)
 
@@ -133,6 +151,8 @@ profiles.forEach((p) => {
   console.log(p.settings.theme.toUpperCase());
 });
 ```
+
+<br /><hr /><br />
 
 11. [10-main.ts](10-main.ts)
 
