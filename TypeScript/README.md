@@ -30,6 +30,8 @@ Technically speaking `TypeScript` is a programming language built on top of `Jav
   - So if you're a lazy programmer like our famous old `John Smith` and want to get things done quickly you may feel `TypeScript` is getting in the way and that's true.
   - But if you're working on large project with multiple developers you would end up wasting more coding in `vanilla JavaScript` and catching those nasty bugs so then you really want to use `TypeScript`. For simple applications you can totally get back to old `vanilla JavaScript` if that's what you prefer.
 
+<br /><hr /><br />
+
 # Setting up the Development Environment
 
 The first thing we need is `node`, because we use `node package manager` or `npm` to install the `TypeScript` compiler. if you don't have it head over to [nodejs.org](https://nodejs.org/en/download/) to download it.
@@ -110,3 +112,8 @@ tsc --init
 ```console
 tsc
 ```
+
+
+
+
+
