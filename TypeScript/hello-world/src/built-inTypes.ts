@@ -34,3 +34,16 @@ const enum Size {
 // enum Size { Small = 's', Medium = 'm', Large = 'l' };
 let mySize: Size = Size.Medium;
 console.log(mySize);
+
+// Functions
+function calculateTax(income: number, taxYear?: number): number {
+  //   let x; // unused variable error if noUnusedLocals is true
+  if ((taxYear || 2022) < 2022) return income * 1.2;
+  // undefined behavior if noUnusedParameters is true
+
+  return income * 1.3;
+}
+
+console.log(calculateTax(10_000, 2021));
+console.log(calculateTax(10_000, 2022));
+console.log(calculateTax(10_000)); // taxYear is optional or use default value in function body
