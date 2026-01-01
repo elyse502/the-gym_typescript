@@ -16,3 +16,12 @@ function kgToLbs(weight) {
 }
 console.log(kgToLbs(10));
 console.log(kgToLbs("10kg"));
+let textBox = {
+    drag: () => {
+        console.log("Dragging...");
+    },
+    resize: () => {
+        console.log("Resizing...");
+    },
+};
+console.log(textBox);
