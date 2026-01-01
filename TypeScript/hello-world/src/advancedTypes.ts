@@ -58,3 +58,11 @@ let textBox: UIWidget = {
 };
 
 console.log(textBox);
+
+// Literal Types (exact, specific values)
+// let quantity: 50 | 100 = 1000;
+type Quantity = 50 | 100;
+let quantity: Quantity = 100;
+
+type Metric = "cm" | "inch";
+let unit: Metric = "cm";

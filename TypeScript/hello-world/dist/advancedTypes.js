@@ -25,3 +25,5 @@ let textBox = {
     },
 };
 console.log(textBox);
+let quantity = 100;
+let unit = "cm";
