@@ -27,3 +27,12 @@ let textBox = {
 console.log(textBox);
 let quantity = 100;
 let unit = "cm";
+function greet(name) {
+    if (name)
+        console.log("Hello " + name.toUpperCase() + "!");
+    else
+        console.log("Hello!");
+}
+greet(null);
+greet(undefined);
+greet("Elysee");
