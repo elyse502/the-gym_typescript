@@ -64,3 +64,5 @@ let employee: {
   },
 };
 // employee.id = 2; // error: cannot reassign a readonly property
+
+employee.retire(new Date());

@@ -22,3 +22,19 @@ var Size;
 })(Size || (Size = {}));
 let mySize = Size.Medium;
 console.log(mySize);
+function calculateTax(income, taxYear) {
+    if ((taxYear || 2022) < 2022)
+        return income * 1.2;
+    return income * 1.3;
+}
+console.log(calculateTax(10000, 2021));
+console.log(calculateTax(10000, 2022));
+console.log(calculateTax(10000));
+let employee = {
+    id: 1,
+    name: "John",
+    retire: (date) => {
+        console.log(date);
+    },
+};
+employee.retire(new Date());
