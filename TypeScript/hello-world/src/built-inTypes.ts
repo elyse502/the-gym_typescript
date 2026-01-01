@@ -47,3 +47,20 @@ function calculateTax(income: number, taxYear?: number): number {
 console.log(calculateTax(10_000, 2021));
 console.log(calculateTax(10_000, 2022));
 console.log(calculateTax(10_000)); // taxYear is optional or use default value in function body
+
+// Objects
+// let employee: { id: number; name?: string } = { id: 1 };
+// employee.name = "John"; // error if noImplicitAny is true because name property doesn't exist on employee object
+// make sure the code you write make conceptual sense don't just disable the compiler options to get rid of errors, here name is needed for an employee
+let employee: {
+  readonly id: number;
+  name: string;
+  retire: (date: Date) => void;
+} = {
+  id: 1,
+  name: "John",
+  retire: (date: Date) => {
+    console.log(date);
+  },
+};
+// employee.id = 2; // error: cannot reassign a readonly property
