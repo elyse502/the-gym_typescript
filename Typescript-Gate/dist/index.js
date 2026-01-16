@@ -6,3 +6,9 @@ const setRange = (range) => {
     return { x, y: y.age > 10 };
 };
 console.log(setRange([true, { name: "Patrick", age: 3 }]));
+console.log();
+const sendMessage = (message) => {
+    var _a;
+    return (_a = message.text) === null || _a === void 0 ? void 0 : _a.toUpperCase();
+};
+console.log(sendMessage({ to: "Alice" }));

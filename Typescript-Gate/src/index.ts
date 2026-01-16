@@ -1,4 +1,4 @@
-// Solve all the typing issues in the code without changing the implementation
+// 1. Solve all the typing issues in the code without changing the implementation
 
 // const setRange = (range: number): number => {
 //   const x = range[0];
@@ -22,3 +22,19 @@ const setRange = (range: [boolean, { name: string; age: number }]): Result => {
 };
 
 console.log(setRange([true, { name: "Patrick", age: 3 }]));
+
+console.log();
+
+// 2. Solve all the typing issues in the code without changing the implementation
+
+// const sendMessage = (message: { to: string; text?: string }) => {
+//   return message.text.toUpperCase();
+// };
+
+// sendMessage({ to: 'Alice' });
+
+const sendMessage = (message: { to: string; text?: string }) => {
+  return message.text?.toUpperCase();
+};
+
+console.log(sendMessage({ to: "Alice" }));
