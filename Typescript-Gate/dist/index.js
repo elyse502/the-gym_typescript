@@ -12,3 +12,13 @@ const sendMessage = (message) => {
     return (_a = message.text) === null || _a === void 0 ? void 0 : _a.toUpperCase();
 };
 console.log(sendMessage({ to: "Alice" }));
+console.log();
+const logOrder = (order) => {
+    var _a;
+    console.log(`Shipping to: ${(_a = order.customer.address) === null || _a === void 0 ? void 0 : _a.city}`);
+};
+logOrder({
+    customer: {
+        name: "Jane",
+    },
+});
